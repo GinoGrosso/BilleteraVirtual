@@ -1,8 +1,7 @@
-# 💰 Examen de JavaScript Frontend - Billetera Virtual
+# 💰 JavaScript Frontend - Billetera Virtual
 
 ## 📝 Introducción
 
-**Tiempo:** 1 hora y 30 minutos  
 **Objetivo:** Desarrollar funcionalidades básicas de una billetera virtual estilo Mercado Pago utilizando JavaScript, DOM, eventos, localStorage, JSON y fetch.
 
 ## 📋 Temas evaluados
