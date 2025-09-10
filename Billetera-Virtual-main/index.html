@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billetera Virtual - Examen JS</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wallet-container">
+    <header>
+      <h1>Mi Billetera Virtual</h1>
+      <div class="balance">
+        <span>Saldo disponible</span>
+        <div class="balance-container">
+          <h2 id="balance">$ 0.00</h2>
+          <select id="currencySelector" class="currency-select">
+            <option value="ARS">ARS</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <section class="actions">
+      <button id="btnIngresar">
+        <i class="fas fa-arrow-down"></i>
+        Ingresar Dinero
+      </button>
+      <button id="btnTransferir">
+        <i class="fas fa-exchange-alt"></i>
+        Transferir
+      </button>
+      <button id="btnHistorial">
+        <i class="fas fa-history"></i>
+        Historial
+      </button>
+    </section>
+
+    <section class="transactions" id="transactionList">
+      <h3>Últimas Transacciones</h3>
+      <div class="transaction-container">
+        <!-- Las transacciones se cargarán dinámicamente -->
+      </div>
+    </section>
+
+    <!-- Modal para ingresar dinero -->
+    <div id="modalIngresar" class="modal">
+      <div class="modal-content">
+        <h3>Ingresar Dinero</h3>
+        <input type="number" id="montoIngreso" placeholder="Monto a ingresar">
+        <button id="confirmarIngreso">Confirmar</button>
+        <button class="cerrar-modal">Cancelar</button>
+      </div>
+    </div>
+
+    <!-- Modal para transferir -->
+    <div id="modalTransferir" class="modal">
+      <div class="modal-content">
+        <h3>Transferir Dinero</h3>
+        <input type="text" id="destinatario" placeholder="Destinatario">
+        <input type="number" id="montoTransferencia" placeholder="Monto a transferir">
+        <button id="confirmarTransferencia">Transferir</button>
+        <button class="cerrar-modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
